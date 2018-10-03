@@ -40,11 +40,11 @@
           <legend class="order-form__title">Тип</legend>
           <ul class="order-form__list">
             <li class="order-form__option order-field">
-              <input class="visually-hidden order-filed__input order-filed__input--radio" type="radio" name="type" value="interior" id="order-interior" checked>
+              <input class="visually-hidden order-field__input order-field__input--radio" type="radio" name="type" value="interior" id="order-interior" checked>
               <label class="order-field__label" for="order-interior">Аксессуар для интерьера</label>
             </li>
             <li class="order-form__option order-field">
-              <input class="visually-hidden order-filed__input order-filed__input--radio" type="radio" name="type" value="toy" id="order-toy">
+              <input class="visually-hidden order-field__input order-field__input--radio" type="radio" name="type" value="toy" id="order-toy">
               <label class="order-field__label" for="order-toy">Детская игрушка</label>
             </li>
           </ul>
@@ -53,27 +53,27 @@
           <legend class="order-form__legend">Цвет</legend>
           <ul class="order-form__list">
             <li class="order-form__option order-field">
-              <input class="visually-hidden order-filed__input order-filed__input--checkbox" type="checkbox" name="color" value="white" id="order-white" checked>
+              <input class="visually-hidden order-field__input order-field__input--checkbox" type="checkbox" name="color" value="white" id="order-white" checked>
               <label class="order-field__label" for="order-white">Белый</label>
             </li>
             <li class="order-form__option order-field">
-              <input class="visually-hidden order-filed__input order-filed__input--checkbox" type="checkbox" name="color" value="gray" id="order-gray" checked>
+              <input class="visually-hidden order-field__input order-field__input--checkbox" type="checkbox" name="color" value="gray" id="order-gray" checked>
               <label class="order-field__label" for="order-gray">Серый</label>
             </li>
             <li class="order-form__option order-field">
-              <input class="visually-hidden order-filed__input order-filed__input--checkbox" type="checkbox" name="color" value="tiffani" id="order-tiffani">
+              <input class="visually-hidden order-field__input order-field__input--checkbox" type="checkbox" name="color" value="tiffani" id="order-tiffani">
               <label class="order-field__label" for="order-tiffani">«Тиффани»</label>
             </li>
             <li class="order-form__option order-field">
-              <input class="visually-hidden order-filed__input order-filed__input--checkbox" type="checkbox" name="color" value="black" id="order-black">
+              <input class="visually-hidden order-field__input order-field__input--checkbox" type="checkbox" name="color" value="black" id="order-black">
               <label class="order-field__label" for="order-black">Черный</label>
             </li>
             <li class="order-form__option order-field">
-              <input class="visually-hidden order-filed__input order-filed__input--checkbox" type="checkbox" name="color" value="pink" id="order-pink">
+              <input class="visually-hidden order-field__input order-field__input--checkbox" type="checkbox" name="color" value="pink" id="order-pink">
               <label class="order-field__label" for="order-pink">Розовый</label>
             </li>
             <li class="order-form__option order-field">
-              <input class="visually-hidden order-filed__input order-filed__input--checkbox" type="checkbox" name="color" value="orange" id="order-orange">
+              <input class="visually-hidden order-field__input order-field__input--checkbox" type="checkbox" name="color" value="orange" id="order-orange">
               <label class="order-field__label" for="order-orange">Оранжевый</label>
             </li>
           </ul>
@@ -83,37 +83,37 @@
           <ul class="order-form__list">
             <li class="order-form__option order-field">
               <label class="order-field__label order-field__label--text" for="order-name">Имя:</label>
-              <input class="order-filed__input order-filed__input--text" type="text" name="name" id="order-name" placeholder="Введите ваше имя*" required>
+              <input class="order-field__input order-field__input--text" type="text" name="name" id="order-name" placeholder="Введите ваше имя*" required>
             </li>
             <li class="order-form__option order-field">
               <label class="order-field__label order-field__label--text" for="order-surname">Фамилия:</label>
-              <input class="order-filed__input order-filed__input--text" type="text" name="surname" id="order-surname" placeholder="Укажите фамилию*" required>
+              <input class="order-field__input order-field__input--text" type="text" name="surname" id="order-surname" placeholder="Укажите фамилию*" required>
             </li>
             <li class="order-form__option order-field">
               <label class="order-field__label order-field__label--text" for="order-patronymic">Отчество:</label>
-              <input class="order-filed__input order-filed__input--text" type="text" name="patronymic" id="order-patronymic" placeholder="Отчество, если желаете">
+              <input class="order-field__input order-field__input--text" type="text" name="patronymic" id="order-patronymic" placeholder="Отчество, если желаете">
             </li>
           </ul>
         </fieldset>
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">Тел</legend>
-          <div class="order-filed">
+          <div class="order-field">
             <label class="visually-hidden order-field__label" for="number">Телефон</label>
-            <input class="order-filed__input order-filed__input--tel" type="tel" pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" name="number" id="order-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <input class="order-field__input order-field__input--tel" type="tel" pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" name="number" id="order-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           </div>
         </fieldset>
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">E-mail</legend>
-          <div class="order-filed">
+          <div class="order-field">
             <label class="visually-hidden order-field__label" for="order-email">E-mail</label>
-            <input class="order-filed__input order-filed__input--email" type="email" name="email" id="order-email" placeholder="Ваш Email*" required>
+            <input class="order-field__input order-field__input--email" type="email" name="email" id="order-email" placeholder="Ваш Email*" required>
           </div>
         </fieldset>
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">Доп</legend>
-          <div class="order-filed">
+          <div class="order-field">
             <label class="visually-hidden order-field__label" for="order-comments">Комментарии к заказу</label>
-            <textarea class="order-filed__input order-filed__input--textarea" name="comments" id="order-comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="order-field__input order-field__input--textarea" name="comments" id="order-comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </fieldset>
         <p class="order-form__warning">*Поля обязательны для заполнения</p>
