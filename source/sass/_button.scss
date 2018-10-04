@@ -1,0 +1,28 @@
+.button {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: $regular-text;
+  border: 2px solid $regular-text;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background: $regular-text;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}

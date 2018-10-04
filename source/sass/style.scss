@@ -1,0 +1,57 @@
+@import 'normalize';
+@import 'fonts';
+
+/* Variables */
+$black: #000000;
+$white: #ffffff;
+$regular-text: #444444;
+$border-color: #ececec;
+
+body {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+
+  color: $regular-text;
+  background-color: $white;
+
+  box-sizing: border-box;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+@import 'page-header';
+@import 'main-nav';
+@import 'site-list';
+@import 'search-form';
+@import 'page-main';
+@import 'catalog-menu';
+@import 'item-week';
+@import 'button';
+@import 'modal';
+@import 'about';
+@import 'feedback';
+@import 'slider';
+@import 'contacts';
+@import 'page-footer';
+@import 'social';
+@import 'copyright';

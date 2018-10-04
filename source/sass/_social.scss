@@ -1,0 +1,34 @@
+.social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 27px;
+
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+
+  border-bottom: 1px solid $border-color;
+}
+
+.social__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  font-size: 0;
+
+  &:hover path,
+  &:focus path {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

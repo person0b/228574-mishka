@@ -1,0 +1,62 @@
+.feedback__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+
+  color: $black;
+}
+
+.feedback__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.feedback__item {
+  padding: 0;
+}
+
+.feedback__text {
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+.feedback__author {
+  display: block;
+  margin-bottom: 6px;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+
+  color: $black;
+}
+
+.feedback__author-link {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 17px;
+  line-height: 24px;
+
+  text-decoration: none;
+
+  color: $regular-text;
+
+  &:hover,
+  &:focus {
+    color: rgba($regular-text, 0.6);
+  }
+
+  &:action {
+    color: rgba($regular-text, 0.3);
+  }
+}
+
+.feedback__toggles {
+  margin-bottom: 38px;
+}

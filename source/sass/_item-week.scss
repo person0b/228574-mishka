@@ -1,0 +1,74 @@
+.item-week__title {
+  margin: 8px 0;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+
+  color: $black;
+}
+
+.item-week__name {
+  margin-bottom: 30px;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+
+  text-transform: uppercase;
+
+  color: #63d1bb;
+}
+
+.item-week__desc {
+  margin-bottom: 30px;
+}
+
+.item-week__featured {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+
+  & tbody {
+    display: flex;
+  }
+
+  & tr {
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(2) {
+      flex-grow: 2;
+    }
+  }
+
+  & th,
+  & td {
+    padding: 10px 30px 10px 0;
+
+    font-weight: normal;
+
+    text-align: left;
+
+    border-bottom: 1px solid #ececec;
+  }
+
+  & td {
+    padding-right: 0;
+  }
+}
+
+.item-week__image {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.item-week__price {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+
+  text-align: center;
+}
