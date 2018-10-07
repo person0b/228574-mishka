@@ -12,7 +12,7 @@
   border: 1px solid $border-color;
 
   &::before {
-    content: '';
+    content: "";
 
     display: block;
     width: 50px;
@@ -21,11 +21,11 @@
   }
 
   &--left::before {
-    background-image: url('../img/icon-left-arrow.svg');
+    background-image: url("../img/icon-left-arrow.svg");
   }
 
   &--right::before {
-    background-image: url('../img/icon-right-arrow.svg');
+    background-image: url("../img/icon-right-arrow.svg");
   }
 
   &:hover::before,

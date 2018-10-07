@@ -1,0 +1,119 @@
+.input-field--radio,
+.input-field--checkbox {
+  margin-left: 62px;
+}
+
+.input-field__label {
+  position: relative;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+
+  color: $black;
+  cursor: pointer;
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #62d1ba;
+  }
+
+  &:active::before {
+    border-color: rgba($regular-text, 0.3);
+  }
+}
+
+.input-field__label--radio {
+  padding-top: 10px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -62px;
+
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid $regular-text;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 14px;
+    left: -48px;
+
+    display: none;
+    width: 16px;
+    height: 16px;
+
+    background: #62d1ba;
+    border-radius: 50%;
+  }
+}
+
+.input-field__label--checkbox {
+  padding-top: 10px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -62px;
+
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid $regular-text;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 14px;
+    left: -52px;
+
+    display: none;
+    width: 22px;
+    height: 16px;
+
+    background-image: url("../img/icon-tick.svg");
+    background-position: top left;
+    background-size: cover;
+  }
+}
+
+.input-field__input:checked ~ .input-field__label::after {
+  display: block;
+}
+
+.input-field__input--text {
+  width: 100%;
+  padding: 17px 0;
+
+  background: none;
+  border: none;
+  border-bottom: 2px solid $black;
+}
+
+.input-field__label--text {
+  margin-bottom: 2px;
+}
+
+.input-field__input--textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 17px;
+  box-sizing: border-box;
+
+  background: none;
+  border: 2px solid $regular-text;
+}

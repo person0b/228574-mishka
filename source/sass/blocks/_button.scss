@@ -14,7 +14,9 @@
   text-transform: uppercase;
 
   color: $regular-text;
+  background: none;
   border: 2px solid $regular-text;
+  cursor: pointer;
 
   &:hover,
   &:focus {

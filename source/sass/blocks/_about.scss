@@ -1,7 +1,7 @@
 .about {
   padding: 30px;
 
-  background-image: url('../img/bg-zigzag-line.svg');
+  background-image: url("../img/bg-zigzag-line.svg");
   background-position: top;
   background-repeat: repeat-x;
   background-size: auto 6px;
@@ -34,7 +34,7 @@
   color: $black;
 
   &::before {
-    content: '';
+    content: "";
 
     display: block;
     width: 55px;
@@ -46,26 +46,26 @@
   }
 
   &--flower::before {
-    background-image: url(../img/icon-feature-flower.svg);
+    background-image: url("../img/icon-feature-flower.svg");
   }
 
   &--money::before {
-    background-image: url(../img/icon-feature-money.svg);
+    background-image: url("../img/icon-feature-money.svg");
   }
 
   &--heart::before {
-    background-image: url(../img/icon-feature-heart.svg);
+    background-image: url("../img/icon-feature-heart.svg");
   }
 
   &--ball::before {
-    background-image: url(../img/icon-feature-ball.svg);
+    background-image: url("../img/icon-feature-ball.svg");
   }
 
   &--rocket::before {
-    background-image: url(../img/icon-feature-rocket.svg);
+    background-image: url("../img/icon-feature-rocket.svg");
   }
 
   &--gift::before {
-    background-image: url(../img/icon-feature-gift.svg);
+    background-image: url("../img/icon-feature-gift.svg");
   }
 }

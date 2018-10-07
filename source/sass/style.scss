@@ -1,5 +1,4 @@
-@import 'normalize';
-@import 'fonts';
+@import "fonts";
 
 /* Variables */
 $black: #000000;
@@ -8,7 +7,7 @@ $regular-text: #444444;
 $border-color: #ececec;
 
 body {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 15px;
@@ -39,22 +38,25 @@ input[type="radio"].visually-hidden {
 }
 
 
-@import 'page-header';
-@import 'main-nav';
-@import 'site-list';
-@import 'search-form';
-@import 'page-main';
-@import 'catalog-menu';
-@import 'item-week';
-@import 'button';
-@import 'modal';
-@import 'about';
-@import 'feedback';
-@import 'slider';
-@import 'contacts';
-@import 'page-footer';
-@import 'social';
-@import 'copyright';
-@import 'catalog';
-@import 'item-card';
-@import 'video';
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/search-form";
+@import "blocks/page-main";
+@import "blocks/catalog-menu";
+@import "blocks/item-week";
+@import "blocks/button";
+@import "blocks/modal";
+@import "blocks/about";
+@import "blocks/feedback";
+@import "blocks/slider";
+@import "blocks/contacts";
+@import "blocks/page-footer";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/catalog";
+@import "blocks/item-card";
+@import "blocks/video";
+@import "blocks/order-form";
+@import "blocks/input-field";
+@import "blocks/to-cart";

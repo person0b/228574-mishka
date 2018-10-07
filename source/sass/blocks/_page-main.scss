@@ -12,7 +12,7 @@
 }
 
 .page-main__header {
-  background: url('../img/hero-mobile@1x.jpg') center top;
+  background: url("../img/hero-mobile@1x.jpg") center top;
 }
 
 .page-main__desc {
@@ -43,4 +43,11 @@
 
 .page-main__contacts {
   margin-bottom: 30px;
+}
+
+.page-main__text {
+  margin: 30px;
+
+  font-size: 13px;
+  line-height: 24px;
 }
