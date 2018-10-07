@@ -15,7 +15,7 @@
   text-decoration: none;
 
   color: $black;
-  border-top: 2px solid #ececec;
+  border-top: 2px solid $border-color;
 
   &:hover,
   &:focus {
