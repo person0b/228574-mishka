@@ -1,13 +1,8 @@
 @import "fonts";
-
-/* Variables */
-$black: #000000;
-$white: #ffffff;
-$regular-text: #444444;
-$border-color: #ececec;
+@import "variables";
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 15px;
@@ -19,24 +14,9 @@ body {
   box-sizing: border-box;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
+@import "helpers";
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+// BLOCKS
 
 @import "blocks/page-header";
 @import "blocks/main-nav";
@@ -45,6 +25,7 @@ input[type="radio"].visually-hidden {
 @import "blocks/page-main";
 @import "blocks/catalog-menu";
 @import "blocks/item-week";
+@import "blocks/featured-table";
 @import "blocks/button";
 @import "blocks/modal";
 @import "blocks/about";

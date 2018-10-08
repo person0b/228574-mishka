@@ -1,0 +1,28 @@
+.featured-table__wrapper {
+  display: flex;
+}
+
+.featured-table__row {
+  display: flex;
+
+  flex-direction: column;
+
+  &:nth-child(2) {
+    flex-grow: 2;
+  }
+}
+
+.featured-table__head,
+.featured-table__data {
+  padding:  10px 30px 10px 0;
+
+  font-weight: normal;
+
+  text-align: left;
+
+  border-bottom: 1px solid $border-color;
+}
+
+.featured-table__data {
+  padding-right: 0;
+}

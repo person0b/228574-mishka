@@ -27,34 +27,6 @@
   display: block;
   width: 100%;
   margin-bottom: 30px;
-
-  & tbody {
-    display: flex;
-  }
-
-  & tr {
-    display: flex;
-    flex-direction: column;
-
-    &:nth-child(2) {
-      flex-grow: 2;
-    }
-  }
-
-  & th,
-  & td {
-    padding: 10px 30px 10px 0;
-
-    font-weight: normal;
-
-    text-align: left;
-
-    border-bottom: 1px solid $border-color;
-  }
-
-  & td {
-    padding-right: 0;
-  }
 }
 
 .item-week__image {
