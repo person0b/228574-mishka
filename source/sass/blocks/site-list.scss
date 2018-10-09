@@ -1,0 +1,28 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__link {
+  display: block;
+  padding: 30px 0 30px 76px;
+
+  font-size: 17px;
+  font-weight: bold;
+
+  text-decoration: none;
+
+  color: $black;
+  border-top: 2px solid $border-color;
+
+  &:hover,
+  &:focus {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
+}

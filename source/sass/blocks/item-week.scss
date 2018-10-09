@@ -1,0 +1,46 @@
+.item-week__title {
+  margin: 8px 0;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+
+  color: $black;
+}
+
+.item-week__name {
+  margin-bottom: 30px;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+
+  text-transform: uppercase;
+
+  color: #63d1bb;
+}
+
+.item-week__desc {
+  margin-bottom: 30px;
+}
+
+.item-week__featured {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.item-week__image {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.item-week__price {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+
+  text-align: center;
+}

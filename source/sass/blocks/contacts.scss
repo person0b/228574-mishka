@@ -1,0 +1,65 @@
+.contacts {
+  padding: 30px;
+  margin-bottom: 10px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+
+  color: $black;
+}
+
+.contacts__list {
+  line-height: 30px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contacts__type {
+  margin-right: 30px;
+
+  flex-shrink: 0;
+}
+
+.contacts__item {
+  margin: 0;
+
+  flex-shrink: 2;
+}
+
+.contacts__mail {
+  padding-bottom: 4px;
+
+  text-decoration: none;
+
+  color: $regular-text;
+  border-bottom: 1px solid #46c1ae;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__map {
+  width: 100vw;
+  margin-bottom: 40px;
+  margin-left: -30px;
+}

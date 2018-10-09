@@ -1,0 +1,38 @@
+.copyright {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__text {
+  margin-right: 40px;
+
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 20px;
+
+  color: $black;
+}
+
+.copyright__link {
+  display: flex;
+
+  align-items: center;
+
+  font-size: 0;
+  line-height: 20px;
+
+  & path {
+    fill: #63d1bb;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
