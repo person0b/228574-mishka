@@ -1,5 +1,6 @@
 .catalog-menu {
-  margin: 0;
+  width: $mobile;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
@@ -41,11 +42,44 @@
 
   &:hover,
   &:focus {
-    padding-top: 25px;
-    padding-bottom: 40px;
+    transform: translateY(-5px);
+    padding-bottom: 35px;
   }
 
   &:active {
     color: rgba($white, 0.3);
+  }
+}
+
+@media (min-width: $tablet) {
+  .catalog-menu {
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .catalog-menu__item {
+    width: 334px;
+
+    flex-shrink: 0;
+  }
+
+  .catalog-menu__link {
+    padding: 35px;
+    padding-right: 180px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog-menu__item {
+    width: 525px;
+  }
+
+  .catalog-menu__link {
+    padding-right: 370px;
   }
 }

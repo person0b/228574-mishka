@@ -1,0 +1,40 @@
+.special {
+  display: none;
+}
+
+@media (min-width: $desktop) {
+  .special {
+    position: absolute;
+    left: 100px;
+    bottom: -40px;
+    z-index: 1;
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .special__item {
+    min-width: 210px;
+    padding-right: 50px;
+  }
+
+  .special__link {
+    font-weight: bold;
+
+    text-decoration: none;
+
+    color: $black;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

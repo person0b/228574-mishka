@@ -60,3 +60,50 @@
 .feedback__toggles {
   margin-bottom: 38px;
 }
+
+@media (min-width: $tablet) {
+  .feedback {
+    position: relative;
+
+    margin-bottom: 70px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .feedback__title {
+    margin-bottom: 60px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .feedback__text {
+    margin-bottom: 60px;
+  }
+
+  .feedback__author-link {
+    margin: 0;
+  }
+
+  .feedback__button {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+
+    width: 175px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .feedback__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .feedback__button {
+    right: 0;
+  }
+}

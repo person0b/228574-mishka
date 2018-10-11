@@ -1,6 +1,51 @@
 .page-footer {
   margin: 0;
-  padding: 20px 30px;
 
   background: #f1f1f1;
+}
+
+.page-footer__wrapper {
+  padding: 20px 0;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .page-footer__wrapper {
+    display: flex;
+    width: $tablet;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .page-footer__logo {
+    display: block;
+
+    font-size: 0;
+
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .page-footer__logo-image:hover path,
+  .page-footer__logo-image:focus path {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo-image:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer__wrapper {
+    width: $desktop;
+    padding: 50px 100px;
+  }
 }

@@ -1,6 +1,6 @@
 .input-field--radio,
 .input-field--checkbox {
-  margin-left: 62px;
+  padding-left: 62px;
 }
 
 .input-field__label {
@@ -116,4 +116,30 @@
 
   background: none;
   border: 2px solid $regular-text;
+}
+
+@media (min-width: $tablet) {
+  .input-field--checkbox {
+    width: 50%;
+  }
+
+  .input-field--text {
+    display: flex;
+
+    align-items: baseline;
+  }
+
+  .input-field__label--text {
+    margin-right: 25px;
+  }
+
+  .input-field__input--text {
+    padding: 16px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .input-field--checkbox {
+    width: 33%;
+  }
 }

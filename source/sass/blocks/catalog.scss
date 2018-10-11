@@ -1,10 +1,22 @@
 .catalog {
-  margin: 0 30px;
-  padding: 0;
-
-  list-style: none;
+  width: $mobile;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
-.catalog__item {
-  margin-bottom: 30px;
+@media (min-width: $tablet) {
+  .catalog {
+    width: $tablet;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog {
+    display: flex;
+    width: $desktop;
+    padding: 100px 100px 0;
+
+    justify-content: space-between;
+  }
 }

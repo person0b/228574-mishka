@@ -1,16 +1,19 @@
-.order-form {
-  margin: 0 30px;
-}
-
 .order-form__fieldset {
+  margin: 0;
   padding: 0;
   border: none;
+}
+
+.order-form__wrapper {
+  width: $mobile;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0 30px;
 }
 
 .order-form__legend {
   position: relative;
   width: 100%;
-  margin-bottom: 20px;
   padding-right: 23px;
 
   font-size: 17px;
@@ -44,23 +47,91 @@
   list-style: none;
 
   &--radio,
-  &--checkbox {
-    margin-top: 20px;
+  &--checkbox,
+  &--name,
+  &--comments {
+    margin-top: 30px;
   }
 }
 
 .order-form__option {
   margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .order-form__warning {
-  margin: 0;
   margin-bottom: 30px;
 
   font-size: 14px;
   line-height: 16px;
 }
 
-.order-form__button {
-  margin-bottom: 30px;
+@media (min-width: $tablet) {
+  .order-form__wrapper {
+    display: flex;
+    width: $tablet;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding: 0 50px;
+
+    justify-content: space-between;
+    align-items: baseline;
+
+    &--comments {
+      align-items: flex-start;
+    }
+  }
+
+  .order-form__legend {
+    display: block;
+    width: 167px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .order-form__list {
+    width: 100%;
+    margin: 0;
+
+    &--checkbox {
+      display: flex;
+
+      flex-wrap: wrap;
+    }
+
+    &--comments {
+      margin: 0;
+    }
+  }
+
+  .order-form__option {
+    width: 100%;
+  }
+
+  .order-form__button {
+    width: 230px;
+
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop) {
+  .order-form__wrapper {
+    width: $desktop;
+    padding: 0 100px;
+
+    &--button {
+      padding-left: 275px;
+    }
+  }
+
+  .order-form__legend {
+    display: block;
+    width: 200px;
+  }
 }

@@ -1,3 +1,7 @@
+.item-week__head {
+  margin-bottom: 30px;
+}
+
 .item-week__title {
   margin: 8px 0;
   font-size: 25px;
@@ -8,8 +12,6 @@
 }
 
 .item-week__name {
-  margin-bottom: 30px;
-
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
@@ -20,6 +22,7 @@
 }
 
 .item-week__desc {
+  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -29,8 +32,7 @@
   margin-bottom: 30px;
 }
 
-.item-week__image {
-  width: 100%;
+.item-week__image--mobile {
   margin-bottom: 30px;
 }
 
@@ -43,4 +45,113 @@
   line-height: 24px;
 
   text-align: center;
+}
+
+.item-week__image--tablet,
+.item-week__image--desktop {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .item-week__desktop-left {
+    display: flex;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .item-week__head {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .item-week__title {
+    margin: 0;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .item-week__name {
+    width: 124px;
+
+    text-align: center;
+  }
+
+  .item-week__body {
+    display: flex;
+    width: 50%;
+    padding-right: 44px;
+
+    flex-direction: column;
+  }
+
+  .item-week__featured {
+    margin-bottom: 0;
+  }
+
+  .item-week__desc {
+    margin-bottom: 50px;
+  }
+
+  .item-week__price {
+    margin-top: auto;
+  }
+
+  .item-week__image--mobile {
+    display: none;
+  }
+
+  .item-week__image--tablet {
+    display: block;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .item-week {
+    display: flex;
+  }
+
+  .item-week__head {
+    position: relative;
+  }
+
+  .item-week__title {
+    position: absolute;
+    left: 175px;
+    width: 884px;
+    padding-right: 47px;
+
+    flex-shrink: 0;
+    order: 2;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .item-week__name {
+    width: 166px;
+    padding: 0 30px;
+
+    flex-shrink: 0;
+  }
+
+  .item-week__body {
+    width: 100%;
+    padding: 0 58px 0 175px;
+  }
+
+  .item-week__image--tablet {
+    display: none;
+  }
+
+  .item-week__image--desktop {
+    display: block;
+  }
 }

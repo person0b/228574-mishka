@@ -1,7 +1,13 @@
 @import "fonts";
 @import "variables";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  min-width: 320px;
+
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -10,8 +16,6 @@ body {
 
   color: $regular-text;
   background-color: $white;
-
-  box-sizing: border-box;
 }
 
 @import "helpers";
@@ -21,12 +25,13 @@ body {
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/site-list";
-@import "blocks/search-form";
+@import "blocks/user-list";
+@import "blocks/special";
 @import "blocks/page-main";
 @import "blocks/catalog-menu";
+@import "blocks/button";
 @import "blocks/item-week";
 @import "blocks/featured-table";
-@import "blocks/button";
 @import "blocks/modal";
 @import "blocks/about";
 @import "blocks/feedback";
@@ -40,4 +45,4 @@ body {
 @import "blocks/video";
 @import "blocks/order-form";
 @import "blocks/input-field";
-@import "blocks/to-cart";
+// @import "blocks/to-cart";
