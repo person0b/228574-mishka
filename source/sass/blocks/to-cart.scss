@@ -1,3 +1,7 @@
+.to-cart {
+  padding: 30px;
+}
+
 .to-cart__title {
   margin: 0;
   margin-bottom: 20px;
@@ -20,11 +24,8 @@
 }
 
 .to-cart__legend {
-  width: 100%;
-  margin-bottom: 20px;
-
-  font-size: 15px;
-  line-height: 30px;
+  margin: 0;
+  margin-bottom: 28px;
 
   text-align: center;
 }
@@ -42,9 +43,9 @@
 }
 
 .to-cart__option {
+  display: block;
   width: 100%;
-  margin-right: 10px;
-
+  margin-right: 7px;
   flex-shrink: 1;
 
   &:last-child {
@@ -54,44 +55,44 @@
 
 .to-cart__label {
   display: block;
-  padding: 20px 0;
   width: 100%;
+  padding: 20px 0;
+  text-align: center;
 
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
 
-  text-align: center;
-
   border: 2px solid rgba($regular-text, 0.1);
-  cursor: pointer;
 
   &:hover,
   &:focus {
-    border-color: rgba($regular-text, 0.3);
-  }
-
-  &:active {
-    border-color: #62d1ba;
+    border-color: #63d1bb;
   }
 }
 
 .to-cart__input:checked ~ .to-cart__label {
-  border-color: #62d1ba;
+  border-color: #63d1bb;
 }
 
 .to-cart__button {
-  background: #63d1bb;
   color: $white;
+  background-color: #63d1bb;
   border-color: #63d1bb;
 
   &:hover,
   &:focus {
-    background: $white;
     color: #63d1bb;
+    background-color: $white;
   }
 
   &:active {
     color: rgba(#63d1bb, 0.3);
+  }
+}
+
+@media (min-width: $tablet) {
+  .to-cart {
+    padding: 30px 108px;
   }
 }

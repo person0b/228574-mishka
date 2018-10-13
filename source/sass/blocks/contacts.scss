@@ -1,4 +1,6 @@
 .contacts {
+  padding-top: 50px;
+
   background-image: url("../img/bg-zigzag-line.svg");
   background-position: top;
   background-repeat: repeat-x;
@@ -8,12 +10,6 @@
 .contacts__title {
   margin: 0;
   margin-bottom: 30px;
-
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 30px;
-
-  color: $black;
 }
 
 .contacts__list {
@@ -58,12 +54,17 @@
 .contacts__map {
   position: relative;
 
+  width: 320px;
+  height: 457px;
+  margin-left: -30px;
+  margin-bottom: 40px;
+
   &::before {
     content: "";
 
     position: absolute;
     top: 145px;
-    left: 108px;
+    left: 138px;
     z-index: 10;
 
     display: block;
@@ -74,32 +75,19 @@
   }
 }
 
-
-.contacts__map--mobile {
-  margin-bottom: 40px;
-  margin-left: -30px;
-}
-
-.contacts__map--tablet,
-.contacts__map--desktop {
-  display: none;
-}
-
-
 @media (min-width: $tablet) {
   .contacts {
+    padding-top: 62px;
+
     background-size: auto 15px;
   }
 
   .contacts__title {
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 
     justify-content: space-between;
     align-items: center;
-
-    font-size: 43px;
-    line-height: 50px;
 
     &::after {
       content: "";
@@ -121,18 +109,15 @@
     padding-right: 50px;
   }
 
-  .contacts__map--mobile {
-    display: none;
-  }
-
-  .contacts__map--tablet {
-    display: block;
+  .contacts__map {
+    width: 768px;
+    height: 457px;
     margin-left: -50px;
     margin-bottom: 55px;
 
     &::before {
       top: 139px;
-      left: 313px;
+      left: 363px;
     }
   }
 
@@ -144,11 +129,11 @@
 
 @media (min-width: $desktop) {
   .contacts {
-    display: flex;
-  }
+    position: relative;
 
-  .contacts__left {
     display: flex;
+    min-height: 550px;
+    padding-top: 94px;
 
     flex-direction: column;
   }
@@ -158,9 +143,6 @@
     margin-bottom: 40px;
 
     justify-content: flex-start;
-
-    font-size: 53px;
-    line-height: 57px;
 
     &::after {
       margin: 0 64px;
@@ -180,12 +162,13 @@
     flex-shrink: 0;
   }
 
-  .contacts__button {
-    margin-left: 175px;
-  }
+  .contacts__map {
+    position: absolute;
+    top: 94px;
+    right: 0;
 
-  .contacts__map--desktop {
-    display: block;
+    width: 525px;
+    height: 457px;
 
     &::before {
       top: 146px;
@@ -193,7 +176,7 @@
     }
   }
 
-  .contacts__map--tablet {
-    display: none;
+  .contacts__button {
+    margin-left: 175px;
   }
 }

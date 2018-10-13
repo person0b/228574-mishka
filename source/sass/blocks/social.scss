@@ -2,7 +2,7 @@
   display: flex;
   margin: 0;
   padding: 0;
-  padding-bottom: 27px;
+  padding-bottom: 15px;
 
   justify-content: center;
   align-items: center;
@@ -13,6 +13,7 @@
 }
 
 .social__item {
+  padding: 0;
   margin-right: 40px;
 
   &:last-child {
@@ -35,6 +36,12 @@
 
 @media (min-width: $tablet) {
   .social {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    margin-left: -70px;
+    margin-top: -20px;
     padding: 0;
   }
 }

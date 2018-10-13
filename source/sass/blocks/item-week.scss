@@ -3,12 +3,8 @@
 }
 
 .item-week__title {
-  margin: 8px 0;
-  font-size: 25px;
-  font-weight: bold;
-  line-height: 30px;
-
-  color: $black;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .item-week__name {
@@ -32,7 +28,7 @@
   margin-bottom: 30px;
 }
 
-.item-week__image--mobile {
+.item-week__image {
   margin-bottom: 30px;
 }
 
@@ -47,30 +43,26 @@
   text-align: center;
 }
 
-.item-week__image--tablet,
-.item-week__image--desktop {
-  display: none;
-}
-
 @media (min-width: $tablet) {
-  .item-week__desktop-left {
-    display: flex;
+  .item-week {
+    position: relative;
 
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: flex;
+    min-height: 510px;
+
+    flex-direction: column;
   }
 
   .item-week__head {
     display: flex;
-    width: 100%;
     margin-bottom: 50px;
 
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
   }
 
   .item-week__title {
+    width: 450px;
     margin: 0;
 
     font-size: 43px;
@@ -79,47 +71,48 @@
 
   .item-week__name {
     width: 124px;
+    margin-top: 10px;
 
     text-align: center;
   }
 
-  .item-week__body {
-    display: flex;
-    width: 50%;
-    padding-right: 44px;
+  .item-week__image {
+    position: absolute;
+    top: 107px;
+    right: 50px;
+    z-index: -1;
 
-    flex-direction: column;
-  }
-
-  .item-week__featured {
-    margin-bottom: 0;
+    width: 333px;
+    height: 404px;
+    margin: 0;
   }
 
   .item-week__desc {
-    margin-bottom: 50px;
+    width: 291px;
+  }
+
+  .item-week__featured {
+    width: 291px;
+    margin-bottom: 0;
   }
 
   .item-week__price {
+    width: 291px;
     margin-top: auto;
   }
 
-  .item-week__image--mobile {
-    display: none;
-  }
-
-  .item-week__image--tablet {
-    display: block;
-    margin: 0;
+  .item-week__button {
+    width: 291px;
   }
 }
 
 @media (min-width: $desktop) {
   .item-week {
-    display: flex;
+    min-height: 636px;
   }
 
   .item-week__head {
-    position: relative;
+    margin-top: 60px;
   }
 
   .item-week__title {
@@ -142,16 +135,18 @@
     flex-shrink: 0;
   }
 
-  .item-week__body {
-    width: 100%;
-    padding: 0 58px 0 175px;
+  .item-week__image {
+    top: 0;
+    right: 0;
+
+    width: 525px;
+    height: 636px;
   }
 
-  .item-week__image--tablet {
-    display: none;
-  }
-
-  .item-week__image--desktop {
-    display: block;
+  .item-week__desc,
+  .item-week__featured,
+  .item-week__price,
+  .item-week__button {
+    margin-left: 175px;
   }
 }

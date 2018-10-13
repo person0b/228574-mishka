@@ -29,9 +29,9 @@
   }
 }
 
-.page-header__logo-image--tablet,
-.page-header__logo-image--desktop {
-  display: none;
+.page-header__logo-image {
+  width: 86px;
+  height: 35px;
 }
 
 @media (min-width: $tablet) {
@@ -48,12 +48,9 @@
     padding: 0;
   }
 
-  .page-header__logo-image--tablet {
-    display: inline;
-  }
-
-  .page-header__logo-image--mobile {
-    display: none;
+  .page-header__logo-image {
+    width: 112px;
+    height: 46px;
   }
 }
 
@@ -61,7 +58,7 @@
   .page-header__wrapper {
     display: block;
     width: $desktop;
-    padding: 0 100px;
+    padding: 0 50px;
   }
 
   .page-header__logo {
@@ -74,11 +71,8 @@
     padding: 0;
   }
 
-  .page-header__logo-image--tablet {
-    display: none;
-  }
-
-  .page-header__logo-image--desktop {
-    display: inline;
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
   }
 }

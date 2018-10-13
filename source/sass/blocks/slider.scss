@@ -40,23 +40,12 @@
 
 @media (min-width: $tablet) {
   .slider__toggles {
-    position: absolute;
-    right: 50px;
-    bottom: 50px;
+    width: 175px;
+
+    justify-content: space-around;
   }
 
   .slider__toggle {
     border: none;
-  }
-}
-
-@media (min-width: $desktop) {
-  .slider__toggles {
-    right: 0;
-    bottom: 60px;
-
-    width: 175px;
-
-    justify-content: space-around;
   }
 }

@@ -15,3 +15,43 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.wrapper {
+  width: $mobile;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+
+  color: $black;
+}
+
+@media (min-width: $tablet) {
+  .wrapper {
+    width: $tablet;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .wrapper {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

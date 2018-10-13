@@ -18,6 +18,11 @@ body {
   background-color: $white;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 @import "helpers";
 
 // BLOCKS
@@ -28,11 +33,10 @@ body {
 @import "blocks/user-list";
 @import "blocks/special";
 @import "blocks/page-main";
-@import "blocks/catalog-menu";
+@import "blocks/categories";
 @import "blocks/button";
 @import "blocks/item-week";
 @import "blocks/featured-table";
-@import "blocks/modal";
 @import "blocks/about";
 @import "blocks/feedback";
 @import "blocks/slider";
@@ -41,8 +45,9 @@ body {
 @import "blocks/social";
 @import "blocks/copyright";
 @import "blocks/catalog";
-@import "blocks/item-card";
+@import "blocks/card";
 @import "blocks/video";
 @import "blocks/order-form";
 @import "blocks/input-field";
-// @import "blocks/to-cart";
+@import "blocks/modal";
+@import "blocks/to-cart";
