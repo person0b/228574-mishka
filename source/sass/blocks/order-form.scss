@@ -44,23 +44,21 @@
   .order-form__legend {
     position: relative;
 
-    span {
-      padding-right: 23px;
+    padding-right: 23px;
 
-      background-color: #ffffff;
-    }
+    background-color: #ffffff;
 
     &::after {
       content: "";
 
       position: absolute;
-      top: 8px;
-      right: 0;
+      top: 12px;
+      left: 0;
       z-index: -1;
 
       display: block;
       height: 1px;
-      width: 100%;
+      width: 260px;
 
       flex-grow: 2;
 
