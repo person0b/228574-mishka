@@ -1,12 +1,14 @@
 .copyright {
   display: flex;
 
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .copyright__text {
-  margin-right: 40px;
+  margin-right: 30px;
+  margin-left: 40px;
+  margin-top: 15px;
 
   font-size: 19px;
   font-weight: bold;
@@ -16,12 +18,8 @@
 }
 
 .copyright__link {
-  display: flex;
-
-  align-items: center;
-
-  font-size: 0;
-  line-height: 20px;
+  margin-right: 50px;
+  margin-top: 12px;
 
   & path {
     fill: #63d1bb;
@@ -34,5 +32,15 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .copyright__text {
+    margin-top: 5px;
+  }
+
+  .copyright__link {
+    margin: 0;
   }
 }

@@ -1,5 +1,5 @@
 .about {
-  padding-top: 40px;
+  padding-top: 32px;
 
   background-image: url("../img/bg-zigzag-line.svg");
   background-position: top;
@@ -20,7 +20,7 @@
 }
 
 .about__item {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
   font-size: 17px;
   font-weight: bold;
@@ -67,7 +67,7 @@
 
 @media (min-width: $tablet) {
   .about {
-    padding-top: 75px;
+    padding-top: 68px;
     background-size: auto 15px;
   }
 
@@ -83,7 +83,15 @@
 
   .about__item {
     width: 50%;
-    padding-right: 50px;
+    margin-bottom: 58px;
+    padding-right: 40px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &::before {
+      margin-bottom: 16px;
+    }
 
     &--flower {
       order: 1;
@@ -113,10 +121,10 @@
 
 @media (min-width: $desktop) {
   .about {
-    padding: 93px 175px 0;
+    padding: 85px 175px 0;
   }
 
   .about__title {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 }
