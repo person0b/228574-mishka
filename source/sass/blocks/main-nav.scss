@@ -23,3 +23,42 @@
     background-image: url("../img/icon-menu-close.svg");
   }
 }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__delivery {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__delivery {
+    position: absolute;
+    right: 50px;
+    bottom: -40px;
+    z-index: 1;
+
+    display: block;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav__delivery {
+    right: 50px;
+  }
+}

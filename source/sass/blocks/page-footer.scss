@@ -1,6 +1,42 @@
 .page-footer {
-  margin: 0;
-  padding: 20px 30px;
+  padding: 25px 0;
 
   background: #f1f1f1;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .page-footer {
+    padding: 50px 0;
+  }
+
+  .page-footer__wrapper {
+    position: relative;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .page-footer__logo {
+    display: block;
+
+    font-size: 0;
+
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .page-footer__logo-image:hover path,
+  .page-footer__logo-image:focus path {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo-image:active {
+    opacity: 0.3;
+  }
 }

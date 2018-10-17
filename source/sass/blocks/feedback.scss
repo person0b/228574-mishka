@@ -1,12 +1,10 @@
+.feedback {
+  padding-top: 30px;
+}
+
 .feedback__title {
   margin: 0;
   margin-bottom: 30px;
-
-  font-size: 25px;
-  font-weight: bold;
-  line-height: 30px;
-
-  color: $black;
 }
 
 .feedback__list {
@@ -59,4 +57,60 @@
 
 .feedback__toggles {
   margin-bottom: 38px;
+}
+
+@media (min-width: $tablet) {
+  .feedback {
+    position: relative;
+
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .feedback__title {
+    margin-bottom: 60px;
+  }
+
+  .feedback__text {
+    margin-bottom: 60px;
+  }
+
+  .feedback__author-link {
+    margin: 0;
+  }
+
+  .feedback__toggles {
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+  }
+
+  .feedback__button {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+
+    width: 175px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .feedback {
+    padding-left: 175px;
+    padding-bottom: 100px;
+  }
+
+  .feedback__toggles {
+    right: 0;
+    bottom: 60px;
+  }
+
+  .feedback__button {
+    right: 0;
+  }
 }

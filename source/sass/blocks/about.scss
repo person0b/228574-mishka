@@ -1,5 +1,5 @@
 .about {
-  padding: 30px;
+  padding-top: 40px;
 
   background-image: url("../img/bg-zigzag-line.svg");
   background-position: top;
@@ -8,17 +8,12 @@
 }
 
 .about__title {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 30px;
-  font-size: 25px;
-  font-weight: bold;
-  line-height: 30px;
-
-  color: $black;
 }
 
 .about__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
@@ -67,5 +62,61 @@
 
   &--gift::before {
     background-image: url("../img/icon-feature-gift.svg");
+  }
+}
+
+@media (min-width: $tablet) {
+  .about {
+    padding-top: 75px;
+    background-size: auto 15px;
+  }
+
+  .about__title {
+    margin-bottom: 50px;
+  }
+
+  .about__list {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 50%;
+    padding-right: 50px;
+
+    &--flower {
+      order: 1;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--ball {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .about {
+    padding: 93px 175px 0;
+  }
+
+  .about__title {
+    margin-bottom: 40px;
   }
 }

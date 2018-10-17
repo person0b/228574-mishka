@@ -37,3 +37,15 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet) {
+  .slider__toggles {
+    width: 175px;
+
+    justify-content: space-around;
+  }
+
+  .slider__toggle {
+    border: none;
+  }
+}

@@ -1,7 +1,14 @@
+@import "normalize";
 @import "fonts";
 @import "variables";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  min-width: 320px;
+
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -10,8 +17,11 @@ body {
 
   color: $regular-text;
   background-color: $white;
+}
 
-  box-sizing: border-box;
+img {
+  width: 100%;
+  height: 100%;
 }
 
 @import "helpers";
@@ -21,13 +31,13 @@ body {
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/site-list";
-@import "blocks/search-form";
+@import "blocks/user-list";
+@import "blocks/special";
 @import "blocks/page-main";
-@import "blocks/catalog-menu";
+@import "blocks/categories";
+@import "blocks/button";
 @import "blocks/item-week";
 @import "blocks/featured-table";
-@import "blocks/button";
-@import "blocks/modal";
 @import "blocks/about";
 @import "blocks/feedback";
 @import "blocks/slider";
@@ -36,8 +46,9 @@ body {
 @import "blocks/social";
 @import "blocks/copyright";
 @import "blocks/catalog";
-@import "blocks/item-card";
+@import "blocks/card";
 @import "blocks/video";
 @import "blocks/order-form";
 @import "blocks/input-field";
+@import "blocks/modal";
 @import "blocks/to-cart";

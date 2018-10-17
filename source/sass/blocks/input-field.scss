@@ -1,6 +1,26 @@
+.input-field--radio {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.input-field--checkbox {
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.input-field--text {
+  margin-bottom: 24px;
+}
+
 .input-field--radio,
 .input-field--checkbox {
-  margin-left: 62px;
+  padding-left: 62px;
 }
 
 .input-field__label {
@@ -24,7 +44,7 @@
 }
 
 .input-field__label--radio {
-  padding-top: 10px;
+  padding-top: 11px;
 
   &::before {
     content: "";
@@ -58,7 +78,7 @@
 }
 
 .input-field__label--checkbox {
-  padding-top: 10px;
+  padding-top: 12px;
 
   &::before {
     content: "";
@@ -95,25 +115,92 @@
   display: block;
 }
 
-.input-field__input--text {
+.input-field__input {
   width: 100%;
-  padding: 17px 0;
 
+  font-size: 17px;
+  line-height: 18px;
+
+  color: rgba($regular-text, 0.3);
   background: none;
   border: none;
-  border-bottom: 2px solid $black;
+
+  &--text {
+    padding: 17px 0;
+
+    border-bottom: 2px solid $black;
+  }
+
+  &--textarea {
+    min-height: 140px;
+    margin-top: 23px;
+    padding: 17px;
+    box-sizing: border-box;
+
+    border: 2px solid $regular-text;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
+    color: $regular-text;
+  }
 }
 
-.input-field__label--text {
-  margin-bottom: 2px;
+@media (min-width: $tablet) {
+  .input-field--radio {
+    margin-bottom: 57px;
+  }
+
+  .input-field--checkbox {
+    width: 50%;
+    margin-bottom: 56px;
+  }
+
+  .input-field--text {
+    display: flex;
+    margin-bottom: 24px;
+
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .input-field__label {
+    font-size: 19px;
+  }
+
+  .input-field__label--text {
+    margin-right: 26px;
+  }
+
+  .input-field__input {
+    font-size: 19px;
+
+    &--text {
+      padding: 16px;
+    }
+
+    &--textarea {
+      margin: 0;
+    }
+  }
 }
 
-.input-field__input--textarea {
-  width: 100%;
-  min-height: 140px;
-  padding: 17px;
-  box-sizing: border-box;
+@media (min-width: $desktop) {
+  .input-field--radio {
+    margin-bottom: 57px;
+  }
 
-  background: none;
-  border: 2px solid $regular-text;
+  .input-field--checkbox {
+    width: 33%;
+    margin-bottom: 60px;
+  }
+
+  .input-field--text,
+  .input-field--textarea {
+    width: 700px;
+  }
 }
