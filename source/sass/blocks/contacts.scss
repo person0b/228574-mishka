@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 40px;
+  padding-top: 41px;
 
   background-image: url("../img/bg-zigzag-line.svg");
   background-position: top;
@@ -18,7 +18,8 @@
 
 .contacts__list {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
+
   line-height: 30px;
 }
 
@@ -65,7 +66,7 @@
   width: 320px;
   height: 457px;
   margin-left: -30px;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 
   &::before {
     content: "";
@@ -85,7 +86,7 @@
 
 @media (min-width: $tablet) {
   .contacts {
-    padding-top: 58px;
+    padding-top: 62px;
 
     background-size: auto 15px;
   }

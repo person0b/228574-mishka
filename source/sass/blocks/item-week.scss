@@ -19,17 +19,17 @@
 
 .item-week__desc {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .item-week__featured {
   display: block;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .item-week__image {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .item-week__price {
@@ -71,7 +71,10 @@
 
   .item-week__name {
     width: 124px;
-    margin-top: 10px;
+    margin-top: 4px;
+    margin-right: 2px;
+
+    line-height: 17px;
 
     text-align: center;
   }
@@ -89,7 +92,7 @@
 
   .item-week__desc {
     width: 291px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
 
     font-size: 17px;
     line-height: 30px;
@@ -120,8 +123,8 @@
   }
 
   .item-week__head {
-    margin-top: 56px;
-    margin-bottom: 50px;
+    margin-top: 61px;
+    margin-bottom: 60px;
   }
 
   .item-week__title {
