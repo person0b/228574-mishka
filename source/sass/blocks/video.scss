@@ -1,5 +1,5 @@
 .video {
-  padding: 30px 34px;
+  padding: 22px 33px 30px;
 
   border: 1px solid $border-color;
 
@@ -16,7 +16,7 @@
 .video__title {
   display: flex;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   align-items: center;
 
@@ -32,6 +32,7 @@
     display: block;
     width: 32px;
     height: 32px;
+    margin-top: -2px;
     margin-right: 25px;
 
     flex-shrink: 0;
@@ -46,7 +47,7 @@
   width: 260px;
   height: 150px;
   margin-left: -34px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .video__play {
@@ -80,7 +81,7 @@
 }
 
 .video__desc {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   font-size: 13px;
   line-height: 24px;
 }
@@ -95,27 +96,33 @@
   }
 
   .video__title {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 
     order: 2;
 
     font-size: 20px;
+
+    &::before {
+      margin-right: 32px;
+    }
   }
 
   .video__wrapper {
     width: 668px;
     height: 455px;
     margin-left: -42px;
+    margin-bottom: 36px;
 
     order: 1;
   }
 
   .video__desc {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
 
     order: 3;
 
     font-size: 15px;
+    line-height: 30px;
   }
 
   .video__button {
@@ -128,16 +135,23 @@
     position: relative;
 
     min-height: 455px;
-    padding: 47px 57px 60px 760px;
+    padding: 45px 56px 58px 759px;
   }
 
   .video__title {
+    margin-bottom: 34px;
+
     flex-direction: column;
     align-items: flex-start;
 
     &::before {
-      margin-bottom: 30px;
+      margin-left: 2px;
+      margin-bottom: 20px;
     }
+  }
+
+  .video__desc {
+    margin-top: 0;
   }
 
   .video__wrapper {
