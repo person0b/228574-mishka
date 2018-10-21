@@ -22,8 +22,6 @@
 }
 
 .social__link {
-  font-size: 0;
-
   &:hover path,
   &:focus path {
     fill: #46c1ae;
@@ -40,8 +38,8 @@
     left: 50%;
     top: 50%;
 
-    margin-left: -70px;
-    margin-top: -20px;
+    margin-left: -72px;
+    margin-top: -12px;
     padding: 0;
   }
 }

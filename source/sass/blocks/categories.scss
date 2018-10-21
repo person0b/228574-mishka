@@ -6,14 +6,22 @@
 
 .categories__item {
   padding: 0;
+
+  &--interior {
+    background-color: #59d5bc;
+  }
+
+  &--toy {
+    background-color: #46c1ae;
+  }
 }
 
 .categories__link {
   display: flex;
-  padding: 22px 27px 22px 30px;
+  padding: 23px 25px 18px 30px;
 
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   font-size: 19px;
   font-weight: bold;
@@ -54,8 +62,12 @@
   width: 40%;
 }
 
-.categories__icon path {
-  fill: #149080;
+.categories__icon {
+  opacity: 0.5;
+
+  & path {
+    fill: #149080;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -73,15 +85,23 @@
   }
 
   .categories__link {
-    padding: 35px;
+    padding: 28px 35px 35px;
 
     font-size: 20px;
     line-height: 30px;
+
+    &--interior {
+      padding-right: 28px;
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .categories__item {
     width: 525px;
+  }
+
+  .categories__link {
+    padding-bottom: 27px;
   }
 }

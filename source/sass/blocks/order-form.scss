@@ -21,21 +21,23 @@
   list-style: none;
 
   &--radio {
-    margin-top: 38px;
-    margin-bottom: 45px;
+    margin-top: 28px;
+    margin-bottom: 36px;
   }
 
   &--checkbox {
-    margin-top: 35px;
-    margin-bottom: 43px;
+    margin-top: 30px;
+    margin-bottom: 35px;
   }
 
   &--name {
-    margin-top: 33px;
+    margin-top: 21px;
+    margin-bottom: 28px;
   }
 }
 
 .order-form__warning {
+  margin: 10px 0 31px;
   font-size: 14px;
   line-height: 16px;
 }
@@ -44,23 +46,21 @@
   .order-form__legend {
     position: relative;
 
-    span {
-      padding-right: 23px;
+    padding-right: 23px;
 
-      background-color: #ffffff;
-    }
+    background-color: #ffffff;
 
     &::after {
       content: "";
 
       position: absolute;
-      top: 8px;
-      right: 0;
+      top: 12px;
+      left: 0;
       z-index: -1;
 
       display: block;
       height: 1px;
-      width: 100%;
+      width: 260px;
 
       flex-grow: 2;
 
@@ -82,22 +82,22 @@
     align-items: baseline;
 
     &--radio {
-      margin-top: 80px;
-      margin-bottom: 66px;
+      margin-top: 51px;
+      margin-bottom: 65px;
     }
 
     &--checkbox {
-      margin-top: 66px;
-      margin-bottom: 14px;
+      margin-top: 63px;
+      margin-bottom: 13px;
     }
 
     &--name {
-      margin-top: 50px;
-      margin-bottom: 50px;
+      margin-top: 47px;
+      margin-bottom: 29px;
     }
 
     &--tel {
-      margin-top: 50px;
+      margin-top: 48px;
     }
 
     &--email {
@@ -106,7 +106,8 @@
 
     &--textarea {
       margin-top: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 46px;
+
       align-items: flex-start;
     }
 
@@ -120,6 +121,10 @@
     width: 167px;
 
     flex-shrink: 0;
+
+    &--textarea {
+      margin-top: 18px;
+    }
   }
 
   .order-form__list {
@@ -130,6 +135,7 @@
       display: flex;
 
       flex-wrap: wrap;
+      justify-content: flex-start;
     }
 
     &--textarea {
@@ -146,14 +152,23 @@
 
     order: -1;
   }
+
+  .order-form__warning {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: $desktop) {
   .order-form__wrapper {
-    padding: 0 60px;
+    padding: 0 61px;
 
     &--checkbox {
-      margin-bottom: 6px;
+      margin-bottom: 11px;
+    }
+
+    &--textarea {
+      margin-bottom: 42px;
     }
 
     &--button {
@@ -163,6 +178,6 @@
 
   .order-form__legend {
     display: block;
-    width: 110px;
+    width: 115px;
   }
 }

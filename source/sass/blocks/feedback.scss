@@ -4,7 +4,7 @@
 
 .feedback__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .feedback__list {
@@ -19,7 +19,8 @@
 }
 
 .feedback__text {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+
   line-height: 30px;
 }
 
@@ -56,14 +57,14 @@
 }
 
 .feedback__toggles {
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet) {
   .feedback {
     position: relative;
 
-    padding-top: 80px;
+    padding-top: 77px;
     padding-bottom: 50px;
 
     background-image: url("../img/review@1x.jpg");
@@ -73,11 +74,13 @@
   }
 
   .feedback__title {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .feedback__text {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
+
+    font-size: 17px;
   }
 
   .feedback__author-link {
@@ -87,12 +90,12 @@
   .feedback__toggles {
     position: absolute;
     right: 50px;
-    bottom: 10px;
+    bottom: 15px;
   }
 
   .feedback__button {
     position: absolute;
-    top: 80px;
+    top: 78px;
     right: 50px;
 
     width: 175px;
@@ -101,16 +104,23 @@
 
 @media (min-width: $desktop) {
   .feedback {
-    padding-left: 175px;
+    padding-top: 68px;
     padding-bottom: 100px;
+    padding-left: 175px;
+    padding-right: 100px;
+  }
+
+  .feedback__text {
+    margin-bottom: 37px;
   }
 
   .feedback__toggles {
     right: 0;
-    bottom: 60px;
+    bottom: 62px;
   }
 
   .feedback__button {
+    top: 78px;
     right: 0;
   }
 }

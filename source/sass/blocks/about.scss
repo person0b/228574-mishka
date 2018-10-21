@@ -1,5 +1,5 @@
 .about {
-  padding-top: 40px;
+  padding-top: 32px;
 
   background-image: url("../img/bg-zigzag-line.svg");
   background-position: top;
@@ -20,7 +20,7 @@
 }
 
 .about__item {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
   font-size: 17px;
   font-weight: bold;
@@ -36,38 +36,45 @@
     height: 37px;
     margin-bottom: 20px;
 
-    background-position: center center;
     background-repeat: no-repeat;
   }
 
   &--flower::before {
     background-image: url("../img/icon-feature-flower.svg");
+    background-position: 8px 2px;
   }
 
   &--money::before {
     background-image: url("../img/icon-feature-money.svg");
+    background-position-y: 4px;
   }
 
   &--heart::before {
     background-image: url("../img/icon-feature-heart.svg");
+    background-position: 8px 8px;
   }
 
   &--ball::before {
     background-image: url("../img/icon-feature-ball.svg");
+    background-position: 4px 6px;
   }
 
   &--rocket::before {
+    margin-left: -6px;
+
     background-image: url("../img/icon-feature-rocket.svg");
+    background-position: left 6px;
   }
 
   &--gift::before {
     background-image: url("../img/icon-feature-gift.svg");
+    background-position: 3px 4px;
   }
 }
 
 @media (min-width: $tablet) {
   .about {
-    padding-top: 75px;
+    padding-top: 65px;
     background-size: auto 15px;
   }
 
@@ -83,7 +90,15 @@
 
   .about__item {
     width: 50%;
-    padding-right: 50px;
+    margin-bottom: 58px;
+    padding-right: 40px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &::before {
+      margin-bottom: 16px;
+    }
 
     &--flower {
       order: 1;
@@ -113,10 +128,12 @@
 
 @media (min-width: $desktop) {
   .about {
-    padding: 93px 175px 0;
+    padding: 84px 175px 0;
+
+    background-size: auto 23px;
   }
 
   .about__title {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 }
