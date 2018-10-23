@@ -16,6 +16,10 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.svg-sprite {
+  display: none;
+}
+
 .wrapper {
   width: $mobile;
   margin: 0 auto;

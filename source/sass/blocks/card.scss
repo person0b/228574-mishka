@@ -75,7 +75,7 @@
   &:focus {
     opacity: 1;
 
-    & path {
+    .card__icon {
       fill: #63d1bb;
     }
   }
