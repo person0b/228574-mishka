@@ -11,7 +11,11 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="/">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Интернет магазин Мишка">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет магазин Мишка">
+          </picture>
         </a>
         <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
