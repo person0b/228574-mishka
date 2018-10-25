@@ -18,12 +18,12 @@
 }
 
 .copyright__link {
-  & path {
+  .copyright__icon {
     fill: #63d1bb;
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
     fill: #46c1ae;
   }
 
