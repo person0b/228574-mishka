@@ -27,16 +27,19 @@
 @media (min-width: $tablet) {
   .site-list {
     position: absolute;
-    bottom: -40px;
+    top: 105px;
     left: 50px;
     z-index: 1;
 
     display: flex;
+    max-width: 400px;
 
-    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .site-list__item {
+    margin: 0;
+    flex-shrink: 0;
     border: none;
   }
 
@@ -51,12 +54,14 @@
 @media (min-width: $desktop) {
   .site-list {
     position: relative;
-    bottom: auto;
+    top: auto;
     left: auto;
+
+    max-width: 437px;
   }
 
   .site-list__item {
-    padding: 30px 35px;
+    padding: 30px 35px 35px;
 
     border-right: 1px solid $border-color;
 

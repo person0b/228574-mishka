@@ -5,13 +5,16 @@
 @media (min-width: $desktop) {
   .special {
     position: absolute;
+    top: 105px;
     left: 50px;
-    bottom: -40px;
     z-index: 1;
 
     display: flex;
+    max-width: 500px;
     margin: 0;
     padding: 0;
+
+    flex-wrap: wrap;
 
     list-style: none;
   }

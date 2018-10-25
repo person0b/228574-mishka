@@ -30,3 +30,9 @@
 .featured-table__data {
   padding-right: 0;
 }
+
+@media (min-width: $tablet) {
+  .featured-table {
+    margin-bottom: 20px;
+  }
+}
