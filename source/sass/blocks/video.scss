@@ -158,10 +158,8 @@
   }
 
   .video__title {
+    display: block;
     margin-bottom: 34px;
-
-    flex-direction: column;
-    align-items: flex-start;
 
     &::before {
       margin-left: 2px;
