@@ -1,5 +1,5 @@
 var modal = document.querySelector('.to-cart');
-var button = document.querySelector('.button--to-cart');
+var button = document.querySelector('.js-to-cart');
 var plug = document.querySelector('.to-cart__plug');
 
 button.addEventListener('click', function (evt) {

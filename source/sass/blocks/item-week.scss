@@ -123,17 +123,17 @@
   }
 
   .item-week__head {
-    margin-top: 61px;
-    margin-bottom: 60px;
+    position: relative;
+
+    display: flex;
+    margin-top: 53px;
+    margin-bottom: 48px;
   }
 
   .item-week__title {
-    position: absolute;
-    left: 175px;
     width: 884px;
-    padding-right: 47px;
+    margin-left: 48px;
 
-    flex-shrink: 0;
     order: 2;
 
     font-size: 53px;
@@ -141,10 +141,13 @@
   }
 
   .item-week__name {
-    width: 166px;
-    padding: 0 30px;
+    width: 80px;
+    margin-left: 42px;
 
-    flex-shrink: 0;
+    order: 1;
+    align-self: center;
+
+    text-align: center;
   }
 
   .item-week__image {
